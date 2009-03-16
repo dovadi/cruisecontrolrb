@@ -8,7 +8,7 @@ class RailsUpdatedTrigger
 
   def build_necessary?(reasons)
     rails = Projects.find('rails')
-    if (rails && rails.source_controle.up_to_date?) || rails.nil?
+    if (rails && rails.source_control.up_to_date?) || rails.nil?
       false
     else
       reasons << "Triggered by an update of #{@triggering_project_name}"
