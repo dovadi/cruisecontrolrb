@@ -4,6 +4,8 @@ class ProjectsController < ApplicationController
   def index
     @projects = Projects.load_all
     
+    @projects.delete(Project.find('rails'))
+    
     respond_to do |format|
       format.html
       format.js { render :action => 'index_js' }
