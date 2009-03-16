@@ -3,7 +3,7 @@
 Project.configure do |project|
   
   # Send email notifications about broken and fixed builds to email1@your.site, email2@your.site (default: send to nobody)
-  # project.email_notifier.emails = ['email1@your.site', 'email2@your.site']
+  project.email_notifier.emails = ['frank.oxener@gmail.com']
 
   # Set email 'from' field to john@doe.com:
   # project.email_notifier.from = 'john@doe.com'
