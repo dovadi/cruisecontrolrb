@@ -4,7 +4,7 @@ class ProjectsController < ApplicationController
   def index
     @projects = Projects.load_all
     
-    @projects.delete(Project.find('rails'))
+    @projects.delete(Projects.find('rails'))
     
     respond_to do |format|
       format.html
