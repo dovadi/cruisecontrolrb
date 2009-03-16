@@ -20,9 +20,7 @@ rescue => e
 end
 
 def cruise_path
-  # NOTE: you must specify $CCRB_HOME here
   "/u/apps/cruisecontrolrb"
-  raise "Please specify your $CCRB_HOME path in this method."
 end
 
 command = ARGV.shift
