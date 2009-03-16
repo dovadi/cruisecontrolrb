@@ -36,6 +36,8 @@ class ProjectsController < ApplicationController
     @project.request_build rescue nil
     @projects = Projects.load_all
 
+    @projects.delete(Projects.find('rails'))
+
     render :action => 'index_js'
   end
   
